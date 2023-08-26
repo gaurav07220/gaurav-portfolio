@@ -29,7 +29,7 @@ const Navbar = () => {
 
             </div>
             <div className="menu">
-                <button onClick={() => setMenu(!menu)}>{menu ? <CloseOutlinedIcon className={menu ? 'menu-icon white-menu' : 'menu-icon'} /> : <MenuOutlinedIcon className='menu-icon' />}</button>
+                <button onClick={() => setMenu(!menu)}>{menu ? <CloseOutlinedIcon className="menu-icon" /> : <MenuOutlinedIcon className='menu-icon' />}</button>
             </div>
         </nav>
     )
