@@ -1,0 +1,56 @@
+/* CircularProgressBar.css */
+
+.progress-container {
+    width: 100px;
+    height: 100px;
+    position: relative;
+    transition: transform 0.5s;
+  }
+  
+  .progress-container.animated {
+    transform: scale(1);
+  }
+  
+  .progress-ring {
+    width: 100%;
+    height: 100%;
+    transform: rotate(-90deg);
+  }
+  
+  .progress-circle {
+    fill: transparent;
+    transition: stroke-dashoffset 0.5s;
+  }
+  
+  .progress-circle.animated {
+    stroke-dashoffset: 0;
+  }
+  
+  .progress-label {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 18px;
+    color: #333;
+    opacity: 0;
+    transition: opacity 0.5s;
+  }
+  
+  .progress-label.animated {
+    opacity: 1;
+  }
+  
+  /* Add styles for different percentage ranges */
+  .progress-circle.low {
+    stroke: #FF5733; /* Red for low percentages */
+  }
+  
+  .progress-circle.medium {
+    stroke: #FFC300; /* Yellow for medium percentages */
+  }
+  
+  .progress-circle.high {
+    stroke: #aab9aa; /* Green for high percentages */
+  }
+  

@@ -1,0 +1,39 @@
+.form {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+.contact-us {
+    margin-top: 70px;
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    flex-wrap: wrap;
+    gap: 100px;
+    height: 80vh;
+}
+.contact-img img {
+    width: 100%;
+}
+.form button {
+    padding: 10px;
+    width: fit-content;
+    text-align: center;
+    text-transform: capitalize;
+    transition: width 0.5s;
+}
+.form input {
+   color:#111111;
+   letter-spacing: 1px;
+}
+
+
+@media(max-width:960px) {
+    .contact-img img {
+        width: 300px;
+    }
+    .contact-us {
+        height: fit-content;
+    }
+
+}

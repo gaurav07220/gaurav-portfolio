@@ -1,0 +1,140 @@
+.home-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    /* margin-top: 60px; */
+    gap: 100px;
+    height: 90vh;
+}
+
+
+.my-inf {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.home-section .my-image {
+    overflow: hidden;
+    width: 300px;
+    height: 300px;
+    padding: 1px;
+    border-radius: 50%;
+    animation: pulse 4s ease infinite;
+}
+
+.home-section .my-image img {
+    width: 100%;
+    filter: grayscale(10);
+    transition: 0.5s;
+}
+
+.my-image img:hover {
+    filter: grayscale(0);
+}
+
+.get-cv {
+    display: flex;
+    gap: 20px;
+}
+
+
+
+/* CSS */
+.get-cv-btn,
+.hire-btn {
+    background-color: #fbeee0;
+    border: 2px solid #422800;
+    border-radius: 30px;
+    box-shadow: #422800 4px 4px 0 0;
+    color: #422800;
+    cursor: pointer;
+    display: inline-block;
+    font-weight: 600;
+    font-size: 18px;
+    padding: 0 18px;
+    line-height: 50px;
+    text-align: center;
+    text-decoration: none;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+}
+
+.hire-btn:hover {
+    background-color: #fff;
+}
+
+.get-cv-btn:hover {
+    background-color: #fff;
+
+}
+
+.get-cv-btn:active {
+    box-shadow: #422800 2px 2px 0 0;
+    transform: translate(2px, 2px);
+}
+
+.hire-btn:active {
+    box-shadow: #422800 2px 2px 0 0;
+    transform: translate(2px, 2px);
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.1);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+@media (min-width: 768px) {
+
+    .get-cv-btn,
+    .hire-btn {
+        min-width: 120px;
+        padding: 0 25px;
+    }
+}
+
+
+
+@media(max-width:900px) {
+    .home-section {
+        flex-direction: column;
+        align-items: center;
+        height: fit-content;
+        gap: 50px;
+    }
+
+    .home-section h1 {
+        font-size: 38px;
+    }
+
+    .home-section h2 {
+        font-size: 20px;
+    }
+
+    .my-inf {
+        align-items: center;
+    }
+
+}
+
+@media(max-width:600px) {
+    .home-section .my-image {
+        height: 200px;
+        width: 200px;
+    }
+
+    .home-section {
+        margin-top: 30px;
+    }
+}

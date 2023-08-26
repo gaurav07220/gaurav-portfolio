@@ -1,0 +1,90 @@
+.about-section {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    margin: auto;
+    width: 70%;
+    padding: 10px;
+}
+
+.about-image img {
+    width: 350px;
+}
+
+.personal-inf {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 50px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.personal-one,
+.personal-two {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.personal-key {
+    font-weight: 600;
+}
+
+.skill-inf {
+    display: flex;
+    gap: 30px;
+}
+
+.tech-skills {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.tech-skills .skill-inf {
+
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.skill-inf p {
+    font-weight: 400;
+}
+
+.languages-inf {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.languages {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    margin-top: 40px;
+    margin-bottom: 50px;
+}
+
+.education {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.education div {
+    display: flex;
+    flex-direction: column;
+}
+
+
+@media(max-width:600px) {
+    .about-section {
+        width: 100%;
+    }
+
+    .about-image img {
+        width: 200px;
+    }
+}
