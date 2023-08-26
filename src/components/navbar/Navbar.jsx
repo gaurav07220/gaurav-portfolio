@@ -14,7 +14,7 @@ const Navbar = () => {
             <div className={menu ? 'navlinks show' : 'navlinks'}>
 
                 <span>
-                    <NavLink className='nav-link' to='/'>Home</NavLink>
+                    <NavLink className='nav-link' to='/gaurav-portfolio'>Home</NavLink>
                 </span>
                 <span>
                     <NavLink className='nav-link' to='/about'>About</NavLink>
