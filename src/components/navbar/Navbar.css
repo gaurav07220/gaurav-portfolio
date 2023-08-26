@@ -40,7 +40,9 @@
 .menu {
     display: none;
 }
-
+.menu-icon {
+  color:purple;
+}
 
 .menu button {
     background: none;
