@@ -5,7 +5,7 @@ import Typing from '../../components/typing/Typing'
 import my_image from '../../assets/port t.jpg'
 import { useNavigate } from 'react-router-dom'
 import { useEffect } from 'react'
-import resume from './GAURAV_CHAVAN_RESUME.pdf';
+import resume from './Garuav_Chavan_Resume_.pdf';
 
 const Home = () => {
     const navigate = useNavigate();
